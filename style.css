@@ -2,32 +2,33 @@ html, body {
   height: 100%;
   width: 100%;
 }
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 .class1{
- background: #B796DE80;
 position: absolute;
 width: 50%;
-height: 200%;
-left: 0px;
-top: 0%;
-background: linear-gradient(0deg, rgba(183, 150, 222, 0.5), rgba(183, 150, 222, 0.5)), 
- 
+height: 100%;
+left: 5%;
+top: 6% 
 }
 
 #side { 
-display: flex;
+position: absolute;
+width: 40%;
+height: 200%;
+left: 60%;
+top: 0%;
+  display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 0px;
 gap: 10px;
-
-position: absolute;
-width: 80%;
-height: 100%;
-left: 40%;
-top: 30%;
 }
+
 #form {
 width: 50%;
 height: 50%;
