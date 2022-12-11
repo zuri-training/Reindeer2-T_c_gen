@@ -418,10 +418,7 @@ textarea::placeholder,
     gap: 20px;
     align-items: center;    
 }
-.about-us-header-flex-left{
-    /* padding-left: 2rem; */
-    /* border: red solid 2px; */
-}
+
 .about-us-header-flex-left p{
     width: 85%;
     padding-left: 2rem;
@@ -431,7 +428,6 @@ textarea::placeholder,
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
-    /* border: yellow 2px solid; */
 }
 .about-us-images img:first-child{
     padding-top: 3rem;    
