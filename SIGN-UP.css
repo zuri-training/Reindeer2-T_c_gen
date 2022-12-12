@@ -2,23 +2,32 @@ html, body {
   height: 100%;
   width: 100%;
 }
-html, body {
-  height: 100%;
-  width: 100%;
-}
 
-.class1{
+.class{
+ background: #B796DE80;
 position: absolute;
 width: 50%;
-height: 100%;
-left: 5%;
-top: 6% 
+height: 200%;
+left: 0px;
+top: 0%;
+background: linear-gradient(0deg, rgba(183, 150, 222, 0.5), rgba(183, 150, 222, 0.5)), 
+ 
 }
 
+#side { 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
 
-
-
-
+position: absolute;
+width: 80%;
+height: 100%;
+left: 40%;
+top: 30%;
+}
 #form {
 width: 50%;
 height: 50%;
@@ -37,7 +46,7 @@ flex-grow: 0;
 
 }
 
-input[type=text],[type=password], select {
+input[type=text],[type=email], select {
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
