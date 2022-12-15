@@ -88,6 +88,7 @@ button{
 h2{
     font-size: var(--fs-h2);
     text-align: center;
+    padding: 0.5rem;
 }
 
 
@@ -104,8 +105,17 @@ h2{
 
 .nav-links > a{
     color: var(--col-nav-links);
+    
 }
-
+.hamburger-menu{
+    /* border: red solid 2px; */
+    
+}
+.menu-icon{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
 .header-btn{
     color: #fff;
     padding: 10px 16px;
@@ -114,6 +124,7 @@ h2{
     border-radius: 10px;
     display: block;
     width: fit-content;
+    text-align: center;
 }
 .header-btn > a{
     color: #fff;
@@ -247,6 +258,9 @@ section{
     margin: auto;
     display: flex;
     margin-bottom: 68px;
+}
+.test-flex-reverse{
+    flex-direction: row-reverse;
 }
 .thumbnail-img{
     width: 100px;
@@ -596,6 +610,7 @@ footer{
     background-color: transparent;
     outline: none;
     padding: .6rem;
+    color: white;
     border: solid #fff 1px;
     margin-top: .5rem;
     /* width: 300px; */
