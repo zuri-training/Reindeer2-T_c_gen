@@ -130,7 +130,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('static')
+    BASE_DIR.joinpath('/project_tc_gen/static')
 ]
 
 STATIC_ROOT = 'var/www/tohmi02/static'
