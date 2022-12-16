@@ -90,6 +90,16 @@ You can now interact with the application as a Guest.
 ## Contributors
 
 - [@Team Reindeer2](https://www.github.com/)
+- [Ihejiako Amarachi](https://www.github.com/Cozyamy)
+- [Ebuka Obiajulu](https://www.github.com/ebukaobiajulu)
+- [Dominic Ojile](https://www.github.com/DominicOj)
+- [Gerald Musa](https://www.github.com/Gerald-TM)
+- [Ebo Ife Olalekan](https://www.github.com/ebonysamlac)
+- [Tofunmi Adeyinka](https://www.github.com/tohmyy)
+- Alabi Oluwafemi
+- Precious Olamife
+- Priscilla Omole
+- Ufuoma Erharhine
 
 
 ## Acknowledgements
