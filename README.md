@@ -4,6 +4,9 @@
 This platform allow users to generate Terms and Conditions (T&C) and Privacy Policy
 # Documentation
 
+## Live Site
+[TermsToGo](https://reindeer2-t-c-gen.vercel.app/)
+
 ## Run Locally
 
 The first thing to do is to clone the repository:
