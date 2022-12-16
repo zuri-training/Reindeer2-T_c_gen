@@ -7,7 +7,7 @@
     }
     *{
         line-height: 28px !important;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     p{
         font-size: 14px !important ;
@@ -19,7 +19,9 @@
         padding: 0;
         padding-block: 1rem;
     }
-    
+    .logo{
+        width: 150px !important;
+    }
     
     .flex-g{
         flex-direction: column;
@@ -123,20 +125,80 @@
         
     }
     .nav-list{
-        position: absolute;
-        background: skyblue;
-        height: 100vh;
-        width: 200px;
-        top:0;
-        /* To hide the menu */
-        right:-200px;
-        text-align: left;
-        
-        /* To position the menu at the top of the other elements */
-        z-index: 2;
-        transition: 1s;
+        display: none;
     }
     
+    /* About Page */
+    .section-header-text{
+        margin-bottom: 1.5rem;    
+    }
+    .section-header-text h1{
+        font-size: 1.5rem;
+        
+    }
+    .about-us-header-flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-us-images{
+        grid-template-columns: 1fr ;
+        gap: 1.5rem;
+    }
+    .about-us-header-flex-left p{
+        width: 100%;
+        padding: 0;
+    }
+    .team{
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        gap: 2rem;
+    }
+    .team-col{
+        margin: 0;
+    }
+    .team-name-position h4{
+        font-size: 14px;
+        line-height: 18px !important;
+    }
+    .team-name-position p{
+        font-size: 14px;
+        line-height: 16px !important;
+        margin: 0;
+    }
+    .team-name-position{
+        width: 100% !important;
+        margin-left: 5px;
+    }
+    .mission-list{
+        width: 100%;
+    }
+    .mission-list li{
+        list-style-type: square;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        /* padding-left: 2rem; */
+    }
+    .customer-reviews-grid{
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0;
+    }
+    .review-col{
+        padding: 0.7rem;
+    }
+
+    /* Contact Us page */
+    .flex-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%; 
+        padding: 1rem !important;
+        margin: 0;
+    }
+    
+
     /* Footer */
     .flex-columns{
         grid-template-columns: 1fr;

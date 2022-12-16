@@ -492,7 +492,7 @@ textarea::placeholder,
     line-height: 5px;
 }
 .team-col>.team-name-position{
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 .team-name-position h4,
 .team-name-position p,
@@ -520,7 +520,6 @@ textarea::placeholder,
     justify-content: space-evenly;
     width: fit-content;
     padding: 0 3rem;
-    width: fit-content;
     margin: auto;
 }
 .review-col{
