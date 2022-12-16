@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    {% load static %}
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href={% static "project_tc_gen/css/newstyle.css" %}
+
+    <!--------------- Fonts ----------------->
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <main>
+        <div class="container error-section">
+            <div class="section-header-text">
+                <h1>Error: 404 Unexpected Error</h1>
+             </div>
+             <div class="error-image">
+                <img src={% static 'project_tc_gen/imgs/404.png' %} alt="" />
+             </div>
+             <p>The resources requested could not be found on this server</p>
+             <div class="error-buttons">
+                <a href="/" class="error-btn">Go Home</a>
+                <a href="contact-us.html" class="error-btn">Contact Us</a>
+             </div>
+        </div>
+    </main>
+</body>
+</html>
