@@ -107,18 +107,19 @@ h2{
     color: var(--col-nav-links);
     
 }
-.hamburger-menu{
-    /* border: red solid 2px; */
+.menu-icon{
+    display: none;
+    /* border: #000 solid 2px; */
     
 }
 .menu-icon{
     font-size: 2rem;
-    display: flex;
+    display: none;
     align-items: center;
 }
 .header-btn{
     color: #fff;
-    padding: 10px 16px;
+    padding: 5px 16px;
     font-size: 1rem;
     background-color: #5D269D;
     border-radius: 10px;

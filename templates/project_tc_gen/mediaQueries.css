@@ -19,9 +19,7 @@
         padding: 0;
         padding-block: 1rem;
     }
-    .nav-list{
-        display: none;
-    }
+    
     
     .flex-g{
         flex-direction: column;
@@ -47,6 +45,9 @@
         line-height: 43.58px;
         font-weight: 400;
     
+    }
+    .login-signup{
+        display: none;
     }
     .right{
         margin: 1.5rem auto;
@@ -115,6 +116,25 @@
         color: #000;
         font-weight: 700;
         font-size: 12px;
+    }
+    /* Hamburger menu */
+    .hamburger-menu{
+        display: block;
+        
+    }
+    .nav-list{
+        position: absolute;
+        background: skyblue;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        /* To hide the menu */
+        right:-200px;
+        text-align: left;
+        
+        /* To position the menu at the top of the other elements */
+        z-index: 2;
+        transition: 1s;
     }
     
     /* Footer */

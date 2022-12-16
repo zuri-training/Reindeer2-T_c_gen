@@ -26,19 +26,21 @@
           <div class="logo">
             <a href="#"><img src="./images/Frame 90.png" alt="termstogo logo"></a> 
           </div>
-          <ul class="nav-list flex">
+          <ul class="nav-list flex" id="navLinks">
+            <ion-icon name="close-outline" class="menu-icon" onclick="hideMenu()"></ion-icon>
             <li class="nav-links"><a href="index.html">Home</a></li>
             <li class="nav-links"><a href="about.html">About</a></li>
             <li class="nav-links"><a href="contact-us.html">Contact Us</a></li>
             <li class="nav-links"><a href="faq.html">FAQ</a></li>
           </ul>
-          <ul class="login-signup flex">
+          <ul class="login-signup flex nav-list" id="navLinks">
             <li class="nav-links"><a href="log-in.html">Log In</a></li>
             <li class="nav-links header-btn"><a href="sign-up.html">Sign Up</a></li>
           </ul>
-          <!-- <div class="hamburger-menu">
-            <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-          </div> -->
+          <div class="hamburger-menu">
+            <ion-icon name="menu-outline" class="menu-icon" onclick="showMenu()"></ion-icon>
+            
+          </div>
         </nav>
       </div>
       <!-- <div class="header-img">
@@ -200,6 +202,7 @@
         </div>
     </footer>
 
+    <script src="./main.js"></script>
     <!-- Icons  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
