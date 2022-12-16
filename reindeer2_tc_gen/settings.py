@@ -130,10 +130,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR.joinpath('/project_tc_gen/static')
+    BASE_DIR.joinpath('static')
 ]
 
-STATIC_ROOT = 'var/www/tohmi02/static'
+STATIC_ROOT = 'var/www/tohmi02.pythonanywhere.com/project_tc_gen/static'
 
 MEDIA_URL ='/media/'
 MEDIA_ROOT = BASE_DIR.joinpath('media/')
