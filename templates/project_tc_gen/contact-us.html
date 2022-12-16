@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TermsToGo | Contact Us</title>
+    {% load static %}
 
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./mediaQueries.css">
-
+    <link rel="stylesheet" href={% static "project_tc_gen/css/newstyle.css" %}
 
     <!--------------- Fonts ----------------->
     <!-- Open Sans -->
@@ -23,23 +22,37 @@
 <body>
     <header>
         <div class="container">
-            <nav class= 'flex'>
-                <div class="logo">
-                  <a href="#"><img src="./images/Frame 90.png" alt="termstogo logo"></a> 
-                </div>
-                <ul class="nav-list flex">
-                  <li class="nav-links"><a href="index.html">Home</a></li>
-                  <li class="nav-links"><a href="about.html">About</a></li>
-                  <li class="nav-links"><a href="contact-us.html">Contact Us</a></li>
-                  <li class="nav-links"><a href="faq.html">FAQ</a></li>
-                </ul>
-                <ul class="login-signup flex">
-                  <li class="nav-links"><a href="log-in.html">Log In</a></li>
-                  <li class="nav-links header-btn"><a href="sign-up.html">Sign Up</a></li>
-                </ul>
-              </nav>
+          <nav class= 'flex'>
+            <div class="logo">
+              <a href="#"><img src= {% static "project_tc_gen/imgs/Frame 90.png" %} alt="termstogo logo"></a> 
+            </div>
+            <ul class="nav-list flex">
+              <li class="nav-links"><a href="#">Home</a></li>
+              <li class="nav-links"><a href="/about">About</a></li>
+              <li class="nav-links"><a href="contact.html">Contact Us</a></li>
+              <li class="nav-links"><a href="faq">FAQ</a></li>
+            </ul>
+            <ul class="login-signup flex">
+              <li class="nav-links"><a href="/sign-in/">Log In</a></li>
+              <li class="nav-links header-btn"><a href="/sign-up/">Sign Up</a></li>
+            </ul>
+          </nav>
         </div>
-    </header>
+        <!-- <div class="header-img">
+          <img
+            src="./images/header.png"
+            alt="image of a man writing with a pen"
+          />
+        </div> -->
+        <div class="header-text">
+          <h1>Generate your Company’s Terms and Conditions in Minutes.</h1>
+          <h3>
+            Build your brand, generate terms and condtions, create your private
+            policy.
+          </h3>
+          <a href="/sign-up" class="header-btn btn">Sign up for free</a>
+        </div>
+      </header>
 
     <!-- Main Section     -->
     <main>
@@ -60,7 +73,7 @@
                         </form>
                     </div>
                     <div class="right right-contact-page">
-                        <img src="./images/contactus-illustration.png" alt="">
+                        <img src={% static 'project_tc_gen/imgs/contactus-illustration.png' %} alt="">
                     </div>
                 </div>
             </div>
@@ -76,23 +89,23 @@
             <div class="flex-columns ">
                 <div class="col-1">
                     <div class="logo">
-                        <a href="index.html"><img src="./images/Frame 91.png" alt="termstogo logo"></a>
+                        <img src={% static 'project_tc_gen/imgs/Frame 90.png' %} alt="termstogo logo">
                     </div>
                     <p>TermsToGo is a platform that helps users Generate terms & conditions and privacy policy</p>
                     <div class="social-media-icons">
-                        <a href=""><img src="./images/linkedin.svg" alt=""></a>
-                        <a href=""><img src="./images/facebook.svg" alt=""></a>
-                        <a href=""><img src="./images/gmail.svg" alt=""></a>
-                        <a href=""><img src="./images/instagram.svg" alt=""></a>
-                        <a href=""><img src="./images/twitter.svg" alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/imgs/linkedin.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/imgs/facebook.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/imgs/gmail.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/imgs/instagram.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/imgs/twitter.svg' %} alt=""></a>
                     </div>
                 </div>
                 <div class="col-2">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="li-bt"><a href="#">Watch Demo</a></li>
-                        <li class="li-bt"><a href="#">Privacy Policy</a></li>
-                        <li class="li-bt"><a href="#">Terms and Conditions</a></li>
+                        <li class="li-bt"><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li class="li-bt"><a href="/tandc">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="col-3">

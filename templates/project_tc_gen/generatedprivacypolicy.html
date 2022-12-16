@@ -9,7 +9,7 @@
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href={% static "project_tc_gen/css/newstyle.css" %} />
-
+   
     <!--------------- Fonts ----------------->
     <!-- Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
   </head>
   <body>
     <header>
@@ -41,6 +43,7 @@
     </header>
 
     <main>
+        <div id="whole">
       <section class="section-one">
         <div class="container">
           <p class="tc-headings">
@@ -173,8 +176,16 @@
           </p>
         </div>
 
-        <button class="tc-btn header-btn">Accept</button>
+        {% comment %} <button class="tc-btn header-btn">Save</button>
+        <button class="tc-btn header-btn">Download</button> {% endcomment %}
       </div>
+      <button id="print">Print</button>
+      <button onclick="generatePdf()">Download</button>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <buttton>Save</button>
+      </form>
+    </div>
     </main>
 
     <!-- Footer Section -->
@@ -213,5 +224,18 @@
           </div>
       </div>
   </footer>
+  
 </body>
+<script>
+const printbtn = document.getElementById('print');
+printbtn.addEventListener('click', function(){
+    print();
+})
+function generatePdf(){
+    const element = document.getElementById("whole")
+    html2pdf()
+    .from(element)
+    .save();
+}
+</script>
 </html>

@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TermsToGo | About Us</title>
-
+    {% load static %}
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="stylesheet" href={% static "project_tc_gen/css/newstyle.css" %} />
 
     <!--------------- Fonts ----------------->
     <!-- Open Sans -->
@@ -22,21 +21,20 @@
 <body>
     <header>
         <div class="container">
-            <nav class= 'flex'>
-                <div class="logo">
-                  <a href="#"><img src="./images/Frame 90.png" alt="termstogo logo"></a> 
-                </div>
-                <ul class="nav-list flex">
-                  <li class="nav-links"><a href="index.html">Home</a></li>
-                  <li class="nav-links"><a href="about.html">About</a></li>
-                  <li class="nav-links"><a href="contact-us.html">Contact Us</a></li>
-                  <li class="nav-links"><a href="faq.html">FAQ</a></li>
-                </ul>
-                <ul class="login-signup flex">
-                  <li class="nav-links"><a href="log-in.html">Log In</a></li>
-                  <li class="nav-links header-btn"><a href="sign-up.html">Sign Up</a></li>
-                </ul>
-              </nav>
+          <nav class= 'flex'>
+            <div class="logo">
+              <a href="index.html"><img src={% static "project_tc_gen/imgs/about/Frame 90.png" %}  alt="termstogo logo"></a> 
+            </div>
+            <ul class="nav-list flex">
+              <li class="nav-links"><a href="/">Home</a></li>
+              <li class="nav-links"><a href="">About</a></li>
+              <li class="nav-links"><a href="contact-us.html">Contact Us</a></li>
+              <li class="nav-links"><a href="/faq">FAQ</a></li>
+            </ul>
+            <ul class="login-signup flex">
+              <li class="nav-links header-btn"><a href="generate-page.html">Generate</a></li>
+            </ul>
+          </nav>
         </div>
     </header>
     <!-- Main Section     -->
@@ -52,8 +50,8 @@
                     </div>
                     <div class="about-us-header-flex-right">
                         <div class="about-us-images">
-                            <img src="./images/about-img_1.png" alt="">
-                            <img src="./images/about-img_2.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/about-img_1.png" %} alt="">
+                            <img src={% static "project_tc_gen/imgs/about/about-img_2.png" %} alt="">
                         </div>
                     </div>
                 </div>
@@ -70,7 +68,7 @@
                 <div class="team">
                    <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-1.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-1.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -79,7 +77,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-2.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-2.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -88,7 +86,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-3.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-3.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -97,7 +95,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-4.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-4.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -106,7 +104,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-5.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-5.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -115,7 +113,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-6.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-6.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -124,7 +122,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-7.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-7.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -133,7 +131,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-8.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-8.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -142,7 +140,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-9.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-9.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -151,7 +149,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-10.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-10.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -160,7 +158,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-11.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-11.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -169,7 +167,7 @@
                     </div>
                     <div class="team-col">
                         <div class="team-col-image">
-                            <img src="./images/team-12.png" alt="">
+                            <img src={% static "project_tc_gen/imgs/about/team-12.png" %} alt="">
                         </div>
                         <div class="team-name-position">
                             <h4>Mary Jane</h4>
@@ -206,11 +204,11 @@
                             <h4>James Harris</h4>
                             <p>Lorem ipsum dolor sit amet consectetur. Habitant netus elementum porta massa. </p>
                             <div class="review-stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
                             </div>
                         </div>
                     </div>
@@ -219,25 +217,11 @@
                             <h4>James Harris</h4>
                             <p>Lorem ipsum dolor sit amet consectetur. Habitant netus elementum porta massa. </p>
                             <div class="review-stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="review-col">
-                        <div class="review-col-text">
-                            <h4>James Harris</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur. Habitant netus elementum porta massa. </p>
-                            <div class="review-stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
                             </div>
 
                         </div>
@@ -247,11 +231,25 @@
                             <h4>James Harris</h4>
                             <p>Lorem ipsum dolor sit amet consectetur. Habitant netus elementum porta massa. </p>
                             <div class="review-stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
-                                <img src="./images/review-star.png" alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="review-col">
+                        <div class="review-col-text">
+                            <h4>James Harris</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Habitant netus elementum porta massa. </p>
+                            <div class="review-stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
+                                <img src={% static "project_tc_gen/imgs/about/review-star.png" %} alt="review stars">
                             </div>
                             
                         </div>
@@ -274,12 +272,12 @@
                     </div>
                     <p>TermsToGo is a platform that helps users Generate terms & conditions and privacy policy</p>
                     <div class="social-media-icons">
-                        <a href=""><img src="./images/linkedin.svg" alt=""></a>
-                        <a href=""><img src="./images/facebook.svg" alt=""></a>
-                        <a href=""><img src="./images/gmail.svg" alt=""></a>
-                        <a href=""><img src="./images/instagram.svg" alt=""></a>
-                        <a href=""><img src="./images/twitter.svg" alt=""></a>
-                    </div>
+                        <a href=""><img src={% static 'project_tc_gen/logos/linkedin.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/logos/facebook.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/logos/gmail.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/logos/instagram.svg' %} alt=""></a>
+                        <a href=""><img src={% static 'project_tc_gen/logos/twitter.svg' %} alt=""></a>
+                      </div>
                 </div>
                 <div class="col-2">
                     <ul>
