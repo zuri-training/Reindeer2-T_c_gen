@@ -38,7 +38,7 @@ body{
 }
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/*space-around; */
     align-items: center;
 }
 .flex-g{
@@ -108,7 +108,7 @@ h2{
 
 .header-btn{
     color: #fff;
-    padding: 10px 16px;
+    padding: 10px 16px; /*10px 16px; */
     font-size: 1rem;
     background-color: #5D269D;
     border-radius: 10px;
@@ -610,9 +610,9 @@ footer{
 
 }
 
-/* Terms and Conditions */
+/*Terms and Conditions */
 li.section-one-list-items{
-    list-style: disc;
+    list-style:disc;
 }
 
 .tc-headings{
@@ -628,4 +628,18 @@ li.section-one-list-items{
    margin-inline: auto;
    font-size: 1.3rem;
     
+}
+@media print {
+    header * {
+        display:none;
+    }
+    footer *{
+        display:none;
+    }
+    #whole, #whole *{
+        display:block;
+    }
+    #print, #print *{
+        display:none;
+    }
 }

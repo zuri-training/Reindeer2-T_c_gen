@@ -5,24 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="VERIFICATION PAGE.css" rel="stylesheet" type="text/css" />
+  {% load static %}
+  <link href={% static "project_tc_gen/css/VERIFICATION PAGE.css" %} rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <script src="script.js"></script>
 
+  <script src="script.js"></script>
+
   <div class="box">
 
-    <img src="LOGO.png" alt="Logo" class="logo">
-    <img src="Frame227.png" class="pic">
+    <img src={% static "project_tc_gen/imgs/LOGO.png" %} alt="Logo" class="logo">
+    <img src={% static "project_tc_gen/imgs/Frame227.png" %} class="pic">
     <br>
     <div class="options">
-      <a href="">Dashboard</a>
-      <br> <a href="">Template</a>
+      <a href="/dashboard">Dashboard</a>
+      <br> <a href="/TC-templates">Template</a>
       <br><a href="">Files</a>
       <br><a href="">Projects</a>
-      <br><a href="">Profile setting</a>
-      <p><a href="">Logout</a></p>
+      <br><a href="/profile">Profile setting</a>
+      <p><a href="/logout">Logout</a></p>
     </div>
 
 
@@ -58,15 +61,15 @@
     <div class="flex-columns">
       <div class="col-1">
         <div class="logo">
-          <img src="Frame91.png" alt="termstogo logo">
+          <img src= {% static 'project_tc_gen/imgs/Frame 91.png' %} alt="termstogo logo">
         </div>
         <p class="des">TermsToGo is a platform that helps users Generate terms & conditions and privacy policy</p>
         <div class="social-media-icons">
-          <a href=""><img src="lk.png" alt=""></a>
-          <a href=""><img src="facebook.png" alt=""></a>
-          <a href=""><img src="gmail.png" alt=""></a>
-          <a href=""><img src="instagram.png" alt=""></a>
-          <a href=""><img src="twitter.png" alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/lk.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/facebook.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/gmail.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/instagram.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/twitter.png' %} alt=""></a>
         </div>
       </div>
 

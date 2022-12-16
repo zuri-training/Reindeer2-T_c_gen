@@ -1,7 +1,3 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
 
 /* DASHBOARD CONTAINER*/
 .box {  
@@ -47,142 +43,126 @@ order: 0;
 flex-grow: 0;
 }
 
-/* styling the a tags  */
-
-
-/* dashboard page style */
-.body{
-  position: absolute;
-width: 60%;
-height: 130%;
-left: 40%;
-top: 0px;
+/* template div styling  */
+.file{
+   display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 30%;
+position: absolute;
+width: 50%;
+height: 20%;
+left: 30%;
+top: 10%;
+}
+.tem {
+  display: flex;
+ padding-left: 30%;
+   padding-top: 15%;
 }
 
-.box2{
+.tem > div {
+  background-color: #f1f1f1;
+  width: 140px;
+height: 170px;
+  margin: 15px;
+  padding: 20px;
+  font-size:10px;
+  font-weight: 400;
+  background: #FFFFFF;
+box-shadow: 3.43096px 3.43096px 9.43515px rgba(18, 18, 18, 0.25);
+border-radius: 12.8661px;
+  font-family: 'Open Sans;'
+}
+
+.select {
+   left: 10%;
+   top: 20%;
   font-family: 'Open Sans';
+  font-size: 9px;
+padding: 6px;
+color: black;
+   cursor: pionter;
+}
+
+.select {
+  transition-duration: 0.4s;
+}
+
+.select:hover {
+  background-color: #ee72ee; 
+  color: white;
+}
+
+.dd {
+   display: flex;
+flex-direction: column;
+padding: 0px;
+position: absolute;
+left: 35%;
+top: 100%;
+  font-family:'Open Sans';
+}
+
+/* button  */
+.container{
+  display: flex;
+flex-direction: row;
+padding: 0px;
+position: absolute;
+left: 35%;
+  gap: 200%;
+top: 130%;
+  font-family:'Open Sans'; 
+}
+
+.btn1 {
+    display: flex;
+   font-family: 'open sans';
+flex-direction: row;
+gap: 10px;
+   font-size: 90%;
+width: 90%;
+background: #5D269E;
+border-radius: 4px;
+color: whitesmoke;
+   cursor: pionter;
+
+  }
+
+.btn2 {
+  display: flex;
+ border-radius: 4px; 
+font-family: 'Open Sans';
+  flex-direction: row;
 font-style: normal;
 font-weight: 400;
-font-size: 10%;
+font-size: 90%;
 letter-spacing: 0.002em;
 color: #1E1E1E;
-flex: none;
-order: 0;
-flex-grow: 0;
-  width: 0%;
-  padding-left: 0%;
-  padding-top: 7%;
-  border: none;
-
+width: 90%;
 }
 
-.image {
-position: absolute;
-width: 100%;
-height: 30%;
-left: 0px;
-top: 20%;
-  border-radius: 6px;
+.btn1 {
+  transition-duration: 0.4s;
 }
 
-#text {
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 90%;
-color: #000000;
+.btn1:hover {
+  background-color: whitesmoke; 
+  color: purple;
 }
 
-h2 {
+.btn2 {
+  transition-duration: 0.4s;
+}
+
+.btn2:hover {
+  background-color: purple; 
   color: white;
-  font-size: 90%;
-font-family: 'Open Sans';
-font-style: normal;
-  position: absolute;
-padding-left: 0%;
-padding-top: 2%;
-  text-align: center;
 }
 
-main{
-  width: 70px;
-  padding-top: 7% ;
-height: 20px;
-  display: grid;
-  grid-template-areas:'a b c ';
-  gap: 10px;
-}
-
-.itemA {
-/*   background: #D7D7D7; */
-border-radius: 10px;
-  grid-area: a;
-}
-
-.itemB {
-border-radius: 10px;
-   grid-area: b;
-}
-
-  .itemC {
-border-radius: 10px;
-     grid-area: c;
-}
-
-.play {
-  position: absolute;
-left: 18.67%;
-right: 33.33%;
-top: 138.33%;
-bottom: 33.33%;
-border: 2px solid #1E1E1;
-  size: 60%;
-}
-
-  .proj {
-   width: 320px;
-height: 100px;
-  display: grid;
-  grid-template-areas:'x y z';
-  gap: 10px; 
-  }
-.itemX {
-  background: #D7D7D7;
-border-radius: 7px;
-  grid-area: x;  
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 6px;
-letter-spacing: 0.002em;
-
-}
-
-.itemY {
-  background: #D7D7D7;
-border-radius: 7px;
-   grid-area: y;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 6px;
-letter-spacing: 0.002em;
-
-}
-
-  .itemZ {
-  background: #D7D7D7;
-border-radius: 7px;
-     grid-area: z;   
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 6px;
-letter-spacing: 0.002em;
-
-}
-
-   /* footer Section Styling */
+ /* footer Section Styling */
 footer{
 width: 100%;    
 position: absolute;
@@ -191,7 +171,7 @@ left: 0%;
 right: 0%;
 bottom: 0px;
 background: #323233;
-    top: 220%;
+    top: 200%;
 
 }
 
@@ -280,3 +260,4 @@ height: 20%;
 border: 1px solid #A08D8D;
 border-radius: 8px;
 }
+

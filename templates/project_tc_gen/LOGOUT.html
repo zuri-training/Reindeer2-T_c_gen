@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  {% load static %}
+  <link href={% static "project_tc_gen/css/logout.css" %} rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <div class="box">
+
+    <img src={% static "project_tc_gen/imgs/dashboard/logo.png" %} alt="Logo" class="logo">
+    <img src={% static "project_tc_gen/imgs/dashboard/Frame227.png" %} class="pic">
+    <br>
+    <div class="options">
+      <a href="/dashboard">Dashboard</a>
+      <br> <a href="">Template</a>
+      <br><a href="">Files</a>
+      <br><a href="">Projects</a>
+      <br><a href="">Profile setting</a>
+      <p><a href="/logout">Logout</a></p>
+    </div>
+
+
+  </div>
+
+  <div class="container">
+    <h3 class="logout">You are about to exit the platform. Are you sure?</h3>
+  <button class="btn1">
+      Go back
+    </button>
+    <form  method="POST" action="/logout/">
+      {% csrf_token %}
+    <button class="btn2">Logout</button>
+    </form>
+  </div>
+
+  
+  <footer>
+
+    <div class="flex-columns">
+      <div class="col-1">
+        <div class="logo">
+          <img src={% static "project_tc_gen/imgs/dashboard/Frame91.png" %} alt="termstogo logo">
+        </div>
+        <p class="des">TermsToGo is a platform that helps users Generate terms & conditions and privacy policy</p>
+        <div class="social-media-icons">
+          <a href=""><img src={% static 'project_tc_gen/logos/lk.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/facebook.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/gmail.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/instagram.png' %} alt=""></a>
+          <a href=""><img src={% static 'project_tc_gen/logos/twitter.png' %} alt=""></a>
+        </div>
+      </div>
+
+      <div class="col2">
+        <ul>
+          <li class="list"><a href="#">Watch Demo</a></li>
+          <li class="list"><a href="#">Privacy Policy</a></li>
+          <li class="list"><a href="#">Terms and Conditions</a </li>
+        </ul>
+      </div>
+
+      <div class="col3">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p class="p">Email:</p>
+        <form action="">
+          <input type="email" name="email" id="undr" placeholder="Maryjoe@gmail.com">
+          <button class="submit">Submit Email</button>
+      </div>
+      </form>
+  </footer>
+
+</body>
+
+</html>

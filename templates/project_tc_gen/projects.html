@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile settings</title>
-    <link rel="stylesheet" href="projects.css".css">
+    <title>Profile settings</title>    
+    {% load static %}
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href={% static 'project_tc_gen/css/projects.css' %} />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 </head>
 
@@ -15,21 +18,21 @@
         <div class="sidebar">
             <div class="container1">
                 <div class="logo">
-                    <img width="90%" height="90%" alt="logg" src="images (for files and project pages)/Termstogologo.png">
+                    <img width="90%" height="90%" alt="logg" src={% static 'project_tc_gen/imgs/projects/Termstogologo.png' %}>
                 </div>
                 <div class="dp_container">
                     <a href="#">
-                        <img class="dp" width="100%" alt="dp" height="100%" src="images (for files and project pages)/me.JPG">
+                        <img class="dp" width="100%" alt="dp" height="100%" src={% static 'project_tc_gen/imgs/projects/me.JPG' %}
                     </a>
                 </div>
                 <div class="container2">
                     <div class="container3">
                         <ul class="list">
-                            <li class="list_item"><a>Dashboard</a></li>
-                            <li class="list_item"><a>Templates</a></li>
-                            <li class="list_item"><a href="files.html">Files</a></li>
-                            <li class="list_item" id="projects"><a href="projects.html">Projects</a></li>
-                            <li class="list_item"><a>Profile Settings</a></li>
+                            <li class="list_item"><a href="/dashboard">Dashboard</a></li>
+                            <li class="list_item"><a href="/TC-templates">Templates</a></li>
+                            <li class="list_item"><a href="/files">Files</a></li>
+                            <li class="list_item" id="projects"><a href="/projects">Projects</a></li>
+                            <li class="list_item"><a href="/profile">Profile Settings</a></li>
                         </ul>
                     </div>
                     <button id="btn1">Logout</button>
@@ -37,14 +40,18 @@
             </div>
         </div>
         <div class="field_container">
-            <form>
+            <form action="" method="POST">
+                {% csrf_token %}
                 <div class="container4">
                     <div class="field">
                         <h2>What document would you like to generate?</h2>
                         
                         <div class="check">
-                            <label><input type="checkbox"> Terms and conditions</label>
-                            <label><input type="checkbox"> Privacy policy</label>
+                            {% comment %} <label>{{form.document_type}} Privacy Policy</label> {% endcomment %}
+                            {% comment %} <label>{{form.is_termsandcondition}} Terms and Conditions</label> {% endcomment %}
+                            {% comment %} <label><input type="checkbox"> Terms and conditions</label> {% endcomment %}
+                            <label><input type="radio" name='generator' value='Terms and Conditions'>Terms and Conditions</label>
+                            <label><input type="radio" name='generator' value='Privacy Policy'> Privacy policy</label>
                         </div>
                     </div>
                     <div class="field">
@@ -72,15 +79,15 @@
         <div class="container5">
             <div class="container6">
 
-                <img width="65%" height="20%" alt="logo" src="images (for files and project pages)/TGtrans.png">
+                <img width="65%" height="20%" alt="logo" src="{% static 'project_tc_gen/imgs/projects/TGtrans.png' %}>
                 <p>TermsToGo is a platform that helps users generate terms &
                     conditions and a privacy policy.</p>
                 <div class="socials">
-                    <a href="#"><img src="logos (for files and project pages)/linkedin.png" width="100%" height="100%" alt="linkedin logo"></a>
-                    <a href="#"><img src="logos (for files and project pages)/fb.png" width="100%" height="100%" alt="fb logo"> </a>
-                    <a href="#"><img src="logos (for files and project pages)/gmail.png" wwidth="100%" height="100%" alt="gmail logo"> </a>
-                    <a href="#"><img src="logos (for files and project pages)/insta.png" width="100%" height="100%" alt="ig logo"> </a>
-                    <a href="#"><img src="logos (for files and project pages)/twitter.png" width="100%" height="100%" alt="twitter logo"> </a>
+                    <a href="#"><img src={% static 'project_tc_gen/logos/projects/linkedin.png' %} width="100%" height="100%" alt="linkedin logo"></a>
+                    <a href="#"><img src={% static 'project_tc_gen/logos/projects/fb.png' %} width="100%" height="100%" alt="fb logo"> </a>
+                    <a href="#"><img src={% static 'project_tc_gen/logos/projects/gmail.png' %} wwidth="100%" height="100%" alt="gmail logo"> </a>
+                    <a href="#"><img src={% static 'project_tc_gen/logos/projects/insta.png' %} width="100%" height="100%" alt="ig logo"> </a>
+                    <a href="#"><img src={% static 'project_tc_gen/logos/projects/twitter.png' %} width="100%" height="100%" alt="twitter logo"> </a>
                 </div>
 
             </div>

@@ -53,12 +53,18 @@ class Product(models.Model):
 
 
 class Document(models.Model):
-    document_id = models.IntegerField()
-    document_type = models.CharField(max_length=100)
+    TYPE = (('Terms and Condition','Terms and Condition'),
+                  ('Privacy Policy', 'Privacy Policy'),
+                )
+
+
+    is_termsandcondition=models.BooleanField("Terms and Condition", default=False)
+    is_privacypolicy=models.BooleanField("Privacy Policy", default=False)
+    document_type = models.CharField(max_length=100, choices= TYPE)
     document_content = models.TextField(null=False, blank=False)
     effective_date = models.DateTimeField(auto_now_add=True)
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
-
+    user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     def __str__(self):
         return self.document_type
 
