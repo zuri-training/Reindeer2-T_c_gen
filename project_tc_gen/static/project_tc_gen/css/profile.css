@@ -110,6 +110,7 @@ label, .list_item:hover, button:hover
     padding: 2%;
     padding-right: 10%;
     font-size: 90%;
+    text-decoration: none;
 }
 #btn1 {
 

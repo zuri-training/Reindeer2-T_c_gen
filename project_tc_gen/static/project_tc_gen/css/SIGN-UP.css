@@ -43,10 +43,27 @@ color: #121212;
 flex: none;
 order: 0;
 flex-grow: 0; 
-
 }
 
-input[type=text],[type=email], select {
+
+#form {
+width: 50%;
+height: 50%;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.02em;
+color: #121212;
+
+  /* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0; 
+}
+
+input[type=text],[type=email], [type=password], select {
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;

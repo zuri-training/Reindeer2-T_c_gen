@@ -13,8 +13,8 @@ class Profile(models.Model):
     password = models.CharField(max_length=200, blank=True, null=True)
     phone = models.CharField(max_length=200, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
-    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+    alt_id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
 
     
     def __str__(self):
-        return self.first_name
+        return self.username

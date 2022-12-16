@@ -38,7 +38,7 @@ body{
 }
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/*space-around; */
     align-items: center;
 }
 .flex-g{
@@ -88,7 +88,6 @@ button{
 h2{
     font-size: var(--fs-h2);
     text-align: center;
-    padding: 0.5rem;
 }
 
 
@@ -105,27 +104,16 @@ h2{
 
 .nav-links > a{
     color: var(--col-nav-links);
-    
 }
-.menu-icon{
-    display: none;
-    /* border: #000 solid 2px; */
-    
-}
-.menu-icon{
-    font-size: 2rem;
-    display: none;
-    align-items: center;
-}
+
 .header-btn{
     color: #fff;
-    padding: 5px 16px;
+    padding: 10px 16px; /*10px 16px; */
     font-size: 1rem;
     background-color: #5D269D;
     border-radius: 10px;
     display: block;
     width: fit-content;
-    text-align: center;
 }
 .header-btn > a{
     color: #fff;
@@ -259,9 +247,6 @@ section{
     margin: auto;
     display: flex;
     margin-bottom: 68px;
-}
-.test-flex-reverse{
-    flex-direction: row-reverse;
 }
 .thumbnail-img{
     width: 100px;
@@ -492,7 +477,7 @@ textarea::placeholder,
     line-height: 5px;
 }
 .team-col>.team-name-position{
-    /* margin-left: 1rem; */
+    margin-left: 1rem;
 }
 .team-name-position h4,
 .team-name-position p,
@@ -520,6 +505,7 @@ textarea::placeholder,
     justify-content: space-evenly;
     width: fit-content;
     padding: 0 3rem;
+    width: fit-content;
     margin: auto;
 }
 .review-col{
@@ -610,7 +596,6 @@ footer{
     background-color: transparent;
     outline: none;
     padding: .6rem;
-    color: white;
     border: solid #fff 1px;
     margin-top: .5rem;
     /* width: 300px; */
@@ -625,9 +610,9 @@ footer{
 
 }
 
-/* Terms and Conditions */
+/*Terms and Conditions */
 li.section-one-list-items{
-    list-style: disc;
+    list-style:disc;
 }
 
 .tc-headings{
@@ -643,4 +628,18 @@ li.section-one-list-items{
    margin-inline: auto;
    font-size: 1.3rem;
     
+}
+@media print {
+    header * {
+        display:none;
+    }
+    footer *{
+        display:none;
+    }
+    #whole, #whole *{
+        display:block;
+    }
+    #print, #print *{
+        display:none;
+    }
 }
