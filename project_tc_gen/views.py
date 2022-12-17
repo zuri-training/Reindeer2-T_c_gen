@@ -66,7 +66,7 @@ def signIn(request):
             login(request, user)
 #             context = {'first_name': request.user.first_name}
             print(request.user.id)
-            return render(request, "project_tc_gen/dashboard.html")
+            return redirect("verification")
         else:
             messages.info(request, 'invalid credentials')
     #         return redirect('sign-in')
