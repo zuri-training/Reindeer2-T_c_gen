@@ -1,7 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import CompanySerializer, ProductSerializer, ServiceSerializer, ReviewSerializer, DocumentSerializer 
-from project_tc_gen.models import Company, Document, Review, Service, Product
+from .serializers import CompanySerializer, ProductSerializer
+from project_tc_gen.models import Company, Product
 @api_view(['GET'])
 def getRoutes(request):
     routes = [
@@ -16,23 +16,23 @@ def getCompany(request):
     serialize = CompanySerializer(companys, many=True)
     return Response(serialize.data)
 
-@api_view(['GET'])
-def getDocument(request):
-    documents = Document.objects.all()
-    serialize = DocumentSerializer(documents, many=True)
-    return Response(serialize.data)
+# @api_view(['GET'])
+# def getDocument(request):
+#     documents = Document.objects.all()
+#     serialize = DocumentSerializer(documents, many=True)
+#     return Response(serialize.data)
 
-@api_view(['GET'])
-def getReview(request):
-    reviews = Review.objects.all()
-    serialize = ReviewSerializer(reviews, many=True)
-    return Response(serialize.data)
+# @api_view(['GET'])
+# def getReview(request):
+#     reviews = Review.objects.all()
+#     serialize = ReviewSerializer(reviews, many=True)
+#     return Response(serialize.data)
 
-@api_view(['GET'])
-def getService(request):
-    services = Service.objects.all()
-    serialize = ServiceSerializer(services, many=True)
-    return Response(serialize.data)
+# @api_view(['GET'])
+# def getService(request):
+#     services = Service.objects.all()
+#     serialize = ServiceSerializer(services, many=True)
+#     return Response(serialize.data)
 
 @api_view(['GET'])
 def getProduct(request):

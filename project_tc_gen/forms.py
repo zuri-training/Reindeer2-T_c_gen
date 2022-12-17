@@ -2,7 +2,7 @@ from django.forms import ModelForm, PasswordInput
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import *
 
-from project_tc_gen.models import Document, Company
+from project_tc_gen.models import Company
 from users.models import Profile 
 from django.contrib.auth.models import User
 
@@ -18,8 +18,8 @@ class CreateUserForm(UserCreationForm):
         }
         fields = ['username','first_name', 'last_name', 'email', 'password1', 'password2']
 
-class GenerateDocument(ModelForm):
-    class Meta:
-        model = Document
-        fields = ['document_type']
+# class GenerateDocument(ModelForm):
+#     class Meta:
+#         model = Document
+#         fields = ['document_type']
 

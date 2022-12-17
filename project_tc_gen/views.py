@@ -7,10 +7,10 @@ from django.contrib.auth import logout as auth_logout
 from django.contrib.auth.models import User, auth
 from django.contrib.auth.decorators import login_required
 
-from .models import Document
+# from .models import Document
 from users.models import Profile
 
-from .forms import CreateUserForm, GenerateDocument
+from .forms import CreateUserForm
 
 from .decorators import unauthenticated_user
 
@@ -99,9 +99,9 @@ def verification(request):
     return render(request, 'project_tc_gen/verification-page.html')
 
 def projects(request):
-    form = GenerateDocument()
-    obj = Document.objects
-    context = {'form': form}
+    # form = GenerateDocument()
+    # obj = Document.objects
+    # context = {'form': form}
     ms=['Terms and Conditions', 'Privacy Policy']
     if request.method=='POST':
         generator = request.POST.getlist('generator')
@@ -118,7 +118,7 @@ def projects(request):
             # return render(request, 'project_tc_gen/privacy-policy.html')
         # elif form.is_termsandcondition==True:
         #     return render(request, 'project_tc_gen/t&c.html')
-    return render(request, 'project_tc_gen/projects.html', context)
+    return render(request, 'project_tc_gen/projects.html')
 
 def error_404(request, pk):
     pk=pk

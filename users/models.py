@@ -13,7 +13,7 @@ class Profile(models.Model):
     password = models.CharField(max_length=200, blank=True, null=True)
     phone = models.CharField(max_length=200, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
-    alt_id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+    # alt_id = models.UUIDField(unique=True, primary_key=True, editable=False, default="")
 
     
     def __str__(self):

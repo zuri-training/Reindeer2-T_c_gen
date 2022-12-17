@@ -15,31 +15,31 @@ class Company(models.Model):
     country = models.CharField(max_length=100)
     company_email = models.CharField(max_length=100)
     company_address = models.CharField(max_length=100)
-    owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+    # owner = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    # id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
 
     def __str__(self):
         return self.company_name
 
 
-class Review(models.Model):
-    user = models.ForeignKey(Profile, on_delete=models.PROTECT)
-    review_id = models.IntegerField()
-    reviews = models.TextField(null=False, blank=False)
-    rating = models.IntegerField()
+# class Review(models.Model):
+#     user = models.ForeignKey(Profile, on_delete=models.PROTECT)
+#     review_id = models.IntegerField()
+#     reviews = models.TextField(null=False, blank=False)
+#     rating = models.IntegerField()
 
 
-    def __str__(self):
-        return self.reviews
+#     def __str__(self):
+#         return self.reviews
 
-class Service(models.Model):
-    service_id = models.IntegerField()
-    name = models.CharField(max_length=100)
-    description = models.TextField(null=False, blank=False)
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+# class Service(models.Model):
+#     service_id = models.IntegerField()
+#     name = models.CharField(max_length=100)
+#     description = models.TextField(null=False, blank=False)
+#     company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
 
 class Product(models.Model):
@@ -52,19 +52,19 @@ class Product(models.Model):
         return self.name
 
 
-class Document(models.Model):
-    TYPE = (('Terms and Condition','Terms and Condition'),
-                  ('Privacy Policy', 'Privacy Policy'),
-                )
+# class Document(models.Model):
+#     TYPE = (('Terms and Condition','Terms and Condition'),
+#                   ('Privacy Policy', 'Privacy Policy'),
+#                 )
 
 
-    is_termsandcondition=models.BooleanField("Terms and Condition", default=False)
-    is_privacypolicy=models.BooleanField("Privacy Policy", default=False)
-    document_type = models.CharField(max_length=100, choices= TYPE)
-    document_content = models.TextField(null=False, blank=False)
-    effective_date = models.DateTimeField(auto_now_add=True)
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
-    def __str__(self):
-        return self.document_type
+#     is_termsandcondition=models.BooleanField("Terms and Condition", default=False)
+#     is_privacypolicy=models.BooleanField("Privacy Policy", default=False)
+#     document_type = models.CharField(max_length=100, choices= TYPE)
+#     document_content = models.TextField(null=False, blank=False)
+#     effective_date = models.DateTimeField(auto_now_add=True)
+#     company = models.ForeignKey(Company, on_delete=models.CASCADE)
+#     user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
+#     def __str__(self):
+#         return self.document_type
 
