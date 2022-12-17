@@ -64,8 +64,9 @@ def signIn(request):
 
         if user is not None:
             login(request, user)
+            context = {'first_name': request.user.first_name}
             print(request.user.id)
-            return redirect("dashboard")
+            return render(request, "project_tc_gen/dashboard.html", context)
         else:
             messages.info(request, 'invalid credentials')
     #         return redirect('sign-in')
