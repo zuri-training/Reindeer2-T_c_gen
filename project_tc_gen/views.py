@@ -81,7 +81,7 @@ def logout(request):
     if request.method== 'POST':
         auth_logout(request)
         return redirect('sign-in')
-    return render(request, 'project_tc_gen/logout.html')
+    return render(request, 'project_tc_gen/newlogout.html')
 
 @login_required(login_url='sign-in')
 def dashboard(request):
