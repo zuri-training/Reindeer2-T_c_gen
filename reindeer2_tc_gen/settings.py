@@ -88,10 +88,11 @@ WSGI_APPLICATION = 'reindeer2_tc_gen.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     #     'NAME': 'reindeer2',
@@ -100,6 +101,15 @@ DATABASES = {
     #     'HOST': 'localhost',
     #     'PORT': '5432',
     # }
+    'default':{
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'UkltiOjGyc6jkqlcLJST',
+        'HOST': 'containers-us-west-176.railway.app',
+        'PORT': '6920'
+    }
+
 }
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
