@@ -65,8 +65,8 @@ def signIn(request):
         if user is not None:
             login(request, user)
 #             context = {'first_name': request.user.first_name}
-            print(request.user.id)
-            return redirect("verification")
+#             print(request.user.id)
+            return render(request, "project_tc_gen/profile.html")
         else:
             messages.info(request, 'invalid credentials')
     #         return redirect('sign-in')
@@ -97,7 +97,7 @@ def TCtemplates(request):
     return render(request, 'project_tc_gen/TandC TEMPLATE.html')
 
 def verification(request):
-    return render(request, 'project_tc_gen/verification-page.html')
+    return render(request, 'project_tc_gen/newdash.html')
 
 def projects(request):
     # form = GenerateDocument()
