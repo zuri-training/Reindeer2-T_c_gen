@@ -12,6 +12,7 @@ urlpatterns = [
 
 
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('newdash/', views.newdash, name='newdash'),
     path('profile/', views.profile, name='profile'),
     path('TC-templates/', views.TCtemplates, name='tctemplates'),
     path('verification/', views.verification, name='verification'),

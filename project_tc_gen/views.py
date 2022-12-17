@@ -87,7 +87,7 @@ def logout(request):
 def dashboard(request):
     context = {'first_name': request.user.first_name}
     print(request.user.first_name)
-    return render(request, 'project_tc_gen/dashboard.html', context)
+    return render(request, 'project_tc_gen/newdash.html', context)
 
 @login_required(login_url='sign-in')
 def profile(request):
@@ -95,6 +95,9 @@ def profile(request):
 
 def TCtemplates(request):
     return render(request, 'project_tc_gen/TandC TEMPLATE.html')
+
+def newdash(request):
+    return render(request,  'project_tc_gen/newdash.html')
 
 def verification(request):
     return render(request, 'project_tc_gen/newdash.html')
