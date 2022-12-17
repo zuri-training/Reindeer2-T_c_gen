@@ -100,10 +100,12 @@ You can now interact with the application as a Guest.
 - [Gerald Musa](https://www.github.com/Gerald-TM)
 - [Ebo Ife Olalekan](https://www.github.com/ebonysamlac)
 - [Tofunmi Adeyinka](https://www.github.com/tohmyy)
-- Alabi Oluwafemi
+- [Alabi Oluwafemi]((https://www.github.com/Oluwafemialabi)
+- [Abiola Olajide]((https://www.github.com/Abiola-olajide)
+- [Omololu Mubarak]((https://www.github.com/Lolu00)
 - Precious Olamife
-- Priscilla Omole
-- Ufuoma Erharhine
+- [Priscilla Omole]((https://www.github.com/Pooma2002)
+- [Ufuoma Erharhine]((https://www.github.com/ufuomaerh)
 
 
 ## Acknowledgements
