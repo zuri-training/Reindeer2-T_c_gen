@@ -26,11 +26,9 @@ def privacyPolicy(request):
 def termsAndConditions(request):
     return render(request, 'project_tc_gen/t&c.html')
 
-@login_required(login_url='sign-in')
 def faq(request):
     return render(request, 'project_tc_gen/faq.html')
 
-@login_required(login_url='sign-in')
 def about(request):
     return render(request, 'project_tc_gen/about.html')
 
@@ -93,15 +91,19 @@ def dashboard(request):
 def profile(request):
     return render(request, 'project_tc_gen/profile.html')
 
+@login_required(login_url='sign-in')
 def TCtemplates(request):
     return render(request, 'project_tc_gen/TandC TEMPLATE.html')
 
+@login_required(login_url='sign-in')
 def newdash(request):
     return render(request,  'project_tc_gen/newdash.html')
 
+@login_required(login_url='sign-in')
 def verification(request):
     return render(request, 'project_tc_gen/newdash.html')
 
+@login_required(login_url='sign-in')
 def projects(request):
     # form = GenerateDocument()
     # obj = Document.objects
