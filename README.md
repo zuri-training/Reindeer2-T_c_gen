@@ -5,7 +5,7 @@ This platform allow users to generate Terms and Conditions (T&C) and Privacy Pol
 # Documentation
 
 ## Live Site
-[TermsToGo](https://reindeer2-t-c-gen.vercel.app/)
+[TermsToGo](https://reindeer2.vercel.app/)
 
 ## Documentation
 TermsToGo is a website that allows users to generate terms & conditions and privacy policy. Users are allowed to enter basic information to help generate a personalized terms & conditions and privacy policy, with options to export, download and website embed. They can as well save data and come back to download later. 
