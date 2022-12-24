@@ -7,7 +7,7 @@
     }
     *{
         line-height: 28px !important;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     p{
         font-size: 14px !important ;
@@ -212,6 +212,30 @@
         font-size: 1rem;
     }
 
+    /* Forgot Password Page */
+    .forgot-password-flex-left h2{
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    .forgot-password-flex{
+        display: block;
+    }
+    .forgot-password-flex-left{
+        width: 100%;
+        padding: 1.5rem;   
+        display: block;
+    }
+    .forgot-password-flex-right{
+        display: none;
+    }
+    .forgot-password-flex-left div{
+        margin-bottom: 0rem;
+    }
+    .fp-btn{
+        width: 100%;
+        margin: 2.5rem auto;
+    }
     /* Footer */
     .flex-columns{
         grid-template-columns: 1fr;
